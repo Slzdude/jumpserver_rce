@@ -44,4 +44,6 @@
 
 在权限足够的账号下，可以读取缓存中存储的系统私钥，但是要求的权限太高了，本来就可以为所欲为了
 
-http://localhost/api/v1/authentication/connection-token/?token=\_SETTING_TERMINAL_HOST_KEY
+```
+http://localhost/api/v1/authentication/connection-token/?token=_SETTING_TERMINAL_HOST_KEY
+```
