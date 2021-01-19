@@ -9,7 +9,11 @@
 = v1.5.9
 ```
 
-这个漏洞的是两部分组合起来的
+经过测试v1.5.8的Koko无法进行利用，因为它在创建WebSocket连接之后对用户身份进行了鉴权，具体代码看：[https://github.com/jumpserver/koko/blob/44d519b40110d208874c147a4c05f267aa75cf95/pkg/httpd/wsmanager.go#L53](https://github.com/jumpserver/koko/blob/44d519b40110d208874c147a4c05f267aa75cf95/pkg/httpd/wsmanager.go#L53)
+
+## 判断JumpServer的版本
+
+有个比较简单的办法，就是访问/luna/页面的js进行提取，具体实现放在了`luna_version.py`中
 
 ## 有限的文件读取漏洞
 
